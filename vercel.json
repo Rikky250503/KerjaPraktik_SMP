@@ -6,6 +6,11 @@
         "src": "composer.json",
         "use": "@vercel/node",
         "config": { "maxLambdaSize": "2048mb" }
+      },
+      {
+        "src": "public/index.php",
+        "use": "@vercel/php",
+        "config": { "maxLambdaSize": "2048mb" }
       }
     ],
     "routes": [
@@ -14,7 +19,7 @@
     "env": {
       "APP_ENV": "production",
       "APP_DEBUG": "false",
-      "APP_URL": "https://your-vercel-app.vercel.app/",
+      "APP_URL": "https://kerja-praktik-smp.vercel.app/",
       "CACHE_DRIVER": "array",
       "LOG_CHANNEL": "stderr",
       "SESSION_DRIVER": "cookie"
