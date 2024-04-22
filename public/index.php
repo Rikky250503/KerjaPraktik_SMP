@@ -14,13 +14,13 @@ $path = $_SERVER['REQUEST_URI'];
 $path = explode('?', $path)[0];
 
 // Routing sederhana untuk REST API
-if ($method === 'GET' && $path === '/api/*') {
+if ($method === 'GET' && $path === '/') {
     // Panggil fungsi atau aturan dari file route.php
     return response() -> json([
         "message" => "Home Page - Dashboard"
     ],200);
 
-} elseif ($method === 'POST' && $path === '/api/*') {
+} elseif ($method === 'POST' && $path === '/') {
     // Panggil fungsi atau aturan dari file route.php
 } else {
     // Menangani rute yang tidak ditemukan
