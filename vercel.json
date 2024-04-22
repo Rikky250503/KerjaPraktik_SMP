@@ -1,7 +1,6 @@
 {
     "version": 2,
     "builds": [
-      { "src": "public/**", "use": "@vercel/php" },
       { "src": "composer.json", "use": "@vercel/static-build" }
     ],
     "routes": [
